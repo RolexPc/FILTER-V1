@@ -310,7 +310,7 @@ Nᴏᴛᴇ : Aꜰᴛᴇʀ 10 Mɪɴᴜᴛᴇꜱ Tʜɪꜱ Mᴇꜱꜱᴀɢᴇ Wɪʟ
 ★ Pᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}
 """
 
-    CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
+    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
 
 ╭────── • ◆ • ──────╮
 ⚙️ Fɪʟᴇ Sɪᴢᴇ :  {file_size}
