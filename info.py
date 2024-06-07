@@ -115,11 +115,11 @@ MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001857768683))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TGxIRFAN')
-AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
+AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), False)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "📂Fɪʟᴇɴᴀᴍᴇ : {file_name}\n\n╔═════•✧❅✦❅✧•═════╗\n▣ <a href='https://t.me/filesharebotusers'> **AML UPDATES** </a>\n╚═════•✧❅✦❅✧•═════╝\n\n **JOIN, SHARE & SUPPORT**")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", None)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", """<b>⍞ 𝗧𝗶𝘁𝗹𝗲 : <a href={url}>{title}</a>
 〄 𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱 : {runtime} min | <a href={url}/releaseinfo>{year}</a>
