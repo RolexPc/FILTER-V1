@@ -42,6 +42,19 @@ class temp(object):
     B_NAME = None
     SETTINGS = {}
 
+async def check_loop_sub(client, message):
+    count = 0
+    while True:
+        if count == 15:
+            return False
+        check = await is_subscribed(client, message)
+        count += 1
+        if check:
+            return True
+        else:
+            pass
+        await asyncio.sleep(1)
+
 async def is_subscribed(bot, query):
     
     ADMINS.extend([1125210189]) if not 1125210189 in ADMINS else ""
@@ -73,6 +86,7 @@ async def is_subscribed(bot, query):
             return True
         else:
             return False
+
 
 async def get_poster(query, bulk=False, id=False, file=None):
     if not id:
