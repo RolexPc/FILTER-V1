@@ -87,7 +87,7 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
-REQ_CHANNEL = environ.get("REQ_CHANNEL", "-1001878092786")
+REQ_CHANNEL = environ.get("REQ_CHANNEL", "-1002216218666")
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
@@ -115,7 +115,7 @@ MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002010307613))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TGxIRFAN')
-AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), False)
+AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
