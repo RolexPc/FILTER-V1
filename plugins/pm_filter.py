@@ -1006,6 +1006,10 @@ async def auto_filter(client, msg, spoll=False):
                         await asyncio.sleep(600)
                         await hehe.delete()
                         await message.delete()
+                        fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                        await asyncio.sleep(100)
+                        await fcu.delete()
+                        await message.delete()
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_delete', True)
@@ -1013,6 +1017,10 @@ async def auto_filter(client, msg, spoll=False):
                     if settings['auto_delete']:
                         await asyncio.sleep(600)
                         await hehe.delete()
+                        await message.delete()
+                        fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                        await asyncio.sleep(100)
+                        await fcu.delete()
                         await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             if message.chat.id == SUPPORT_CHAT_ID:
@@ -1026,6 +1034,10 @@ async def auto_filter(client, msg, spoll=False):
                         await asyncio.sleep(600)
                         await hmm.delete()
                         await message.delete()
+                        fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                        await asyncio.sleep(100)
+                        await fcu.delete()
+                        await message.delete()
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_delete', True)
@@ -1034,16 +1046,23 @@ async def auto_filter(client, msg, spoll=False):
                         await asyncio.sleep(600)
                         await hmm.delete()
                         await message.delete()
+                        fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                        await asyncio.sleep(100)
+                        await fcu.delete()
+                        await message.delete()
         except Exception as e:
             if message.chat.id == SUPPORT_CHAT_ID:
                 await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...</b>")
             else:
                 logger.exception(e)
-                fek = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
+                fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
                 try:
                     if settings['auto_delete']:
                         await asyncio.sleep(600)
                         await fek.delete()
+                        fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                        await asyncio.sleep(100)
+                        await fcu.delete()
                         await message.delete()
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
@@ -1052,16 +1071,22 @@ async def auto_filter(client, msg, spoll=False):
                     if settings['auto_delete']:
                         await asyncio.sleep(600)
                         await fek.delete()
+                        fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                        await asyncio.sleep(100)
+                        await fcu.delete()
                         await message.delete()
     else:
         if message.chat.id == SUPPORT_CHAT_ID:
             await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...</b>",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ​ ", url=f"https://t.me/BugFilmsRequests")]]))
         else:
-            fuk = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(600)
                     await fuk.delete()
+                    fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                    await asyncio.sleep(100)
+                    await fcu.delete()
                     await message.delete()
             except KeyError:
                 grpid = await active_connection(str(message.from_user.id))
@@ -1070,6 +1095,9 @@ async def auto_filter(client, msg, spoll=False):
                 if settings['auto_delete']:
                     await asyncio.sleep(600)
                     await fuk.delete()
+                    fcu = await message.reply(f"<b>👋 ഹൈയ് {message.from_user.mention} 😍\n\nനിങ്ങളുടെ അഭ്യർത്ഥന ഇല്ലാതാക്കി 🗑️\n(പകർപ്പവകാശ പ്രശ്നം ഒഴിവാക്കുന്നതിനാൽ 😌)\n\nആ ഫയലുകൾക്കായി വീണ്ടും അഭ്യർത്ഥിക്കുക ❤️\n\n𝐻𝑒𝑙𝑙𝑜 👋 {message.from_user.mention}😍\n\n𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 🗑️\n(𝑫𝒖𝒆 𝑻𝒐 𝑨𝒗𝒐𝒊𝒅 𝑪𝒐𝒑𝒚𝒓𝒊𝒈𝒉𝒕𝒔 𝑰𝒔𝒔𝒖𝒆😌)\n\n𝐈𝐅 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐇𝐀𝐓 𝐅𝐈𝐋𝐄, 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐀𝐆𝐀𝐈𝐍 ❤️</b>")
+                    await asyncio.sleep(100)
+                    await fcu.delete()
                     await message.delete()
      
     if spoll:
